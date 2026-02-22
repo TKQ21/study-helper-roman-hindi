@@ -99,31 +99,31 @@ const StudyPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen neon-bg-grid px-4 pb-24 pt-6">
+    <div className="min-h-[100dvh] neon-bg-grid px-3 sm:px-4 pb-20 pt-4 sm:pt-6">
       <div className="max-w-lg mx-auto">
         {/* Header */}
-        <div className="flex items-center gap-3 mb-6">
+        <div className="flex items-center gap-3 mb-4 sm:mb-6">
           <Link to="/">
             <NeonButton neonColor="pink" size="sm">
-              <ArrowLeft size={18} />
+              <ArrowLeft size={16} />
             </NeonButton>
           </Link>
-          <h1 className="font-display text-2xl font-bold neon-text-cyan">Study Helper</h1>
+          <h1 className="font-display text-xl sm:text-2xl font-bold neon-text-cyan">Study Helper</h1>
         </div>
 
         {/* Settings */}
-        <div className="grid grid-cols-2 gap-3 mb-4">
+        <div className="grid grid-cols-2 gap-2 sm:gap-3 mb-3 sm:mb-4">
           {/* Class selector */}
-          <NeonCard neonColor="yellow" className="p-3">
-            <label className="font-display text-xs tracking-wider text-neon-yellow block mb-2">
+          <NeonCard neonColor="yellow" className="p-2.5 sm:p-3">
+            <label className="font-display text-[10px] sm:text-xs tracking-wider text-neon-yellow block mb-1.5">
               Class
             </label>
-            <div className="flex gap-2">
+            <div className="flex gap-1.5 sm:gap-2">
               {["8", "10", "12"].map((c) => (
                 <button
                   key={c}
                   onClick={() => setClassLevel(c)}
-                  className={`font-display text-sm px-3 py-1.5 rounded-md border transition-all ${
+                  className={`font-display text-xs sm:text-sm px-2 sm:px-3 py-1 sm:py-1.5 rounded-md border transition-all flex-1 ${
                     classLevel === c
                       ? "neon-border-yellow bg-neon-yellow/10 text-neon-yellow"
                       : "border-border text-muted-foreground hover:text-foreground"
@@ -136,16 +136,16 @@ const StudyPage: React.FC = () => {
           </NeonCard>
 
           {/* Length selector */}
-          <NeonCard neonColor="green" className="p-3">
-            <label className="font-display text-xs tracking-wider text-neon-green block mb-2">
+          <NeonCard neonColor="green" className="p-2.5 sm:p-3">
+            <label className="font-display text-[10px] sm:text-xs tracking-wider text-neon-green block mb-1.5">
               Length
             </label>
-            <div className="flex gap-2">
+            <div className="flex gap-1.5 sm:gap-2">
               {(["short", "long"] as const).map((l) => (
                 <button
                   key={l}
                   onClick={() => setAnswerLength(l)}
-                  className={`font-display text-sm px-3 py-1.5 rounded-md border transition-all capitalize ${
+                  className={`font-display text-xs sm:text-sm px-2 sm:px-3 py-1 sm:py-1.5 rounded-md border transition-all capitalize flex-1 ${
                     answerLength === l
                       ? "neon-border-green bg-neon-green/10 text-neon-green"
                       : "border-border text-muted-foreground hover:text-foreground"
@@ -159,16 +159,16 @@ const StudyPage: React.FC = () => {
         </div>
 
         {/* Question input */}
-        <NeonCard neonColor="cyan" className="mb-4">
-          <label className="font-display text-xs tracking-wider neon-text-cyan block mb-2">
+        <NeonCard neonColor="cyan" className="mb-3 sm:mb-4 p-3 sm:p-6">
+          <label className="font-display text-[10px] sm:text-xs tracking-wider neon-text-cyan block mb-1.5">
             Your Question (Hindi / Urdu / English)
           </label>
           <textarea
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
             placeholder="Yahan apna sawaal likho..."
-            rows={4}
-            className="w-full bg-background/50 border border-border rounded-lg p-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-neon-cyan resize-none font-body text-lg"
+            rows={3}
+            className="w-full bg-background/50 border border-border rounded-lg p-2.5 sm:p-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-neon-cyan resize-none font-body text-base sm:text-lg"
           />
         </NeonCard>
 
@@ -183,7 +183,7 @@ const StudyPage: React.FC = () => {
         <NeonButton
           neonColor="green"
           size="lg"
-          className="w-full mb-6"
+          className="w-full mb-4 sm:mb-6"
           onClick={handleSubmit}
           disabled={isLoading}
         >

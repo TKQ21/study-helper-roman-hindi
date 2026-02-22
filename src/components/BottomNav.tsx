@@ -19,8 +19,8 @@ const BottomNav: React.FC = () => {
   const location = useLocation();
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 bg-card/90 backdrop-blur-md border-t border-border">
-      <div className="flex justify-around items-center py-3 px-4 max-w-lg mx-auto">
+    <nav className="fixed bottom-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-t border-border safe-area-bottom">
+      <div className="flex justify-around items-center py-2.5 sm:py-3 px-4 max-w-lg mx-auto">
         {navItems.map(({ to, label, icon: Icon, color }) => {
           const isActive = location.pathname === to;
           return (
