@@ -1,73 +1,83 @@
-# Welcome to your Lovable project
+📘 Roman Hindi Study Helper
 
-## Project info
+AI-powered study assistant that generates exam-focused Roman Hindi answers using OpenAI GPT.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Live App:
+👉 https://study-helper-roman-hindi.lovable.app/
 
-## How can I edit this code?
+🚀 About This Project
 
-There are several ways of editing your application.
+Roman Hindi Study Helper is an AI-powered web application designed to help students of Class 8, 10, and 12 get simple, exam-oriented answers in Roman Hindi.
 
-**Use Lovable**
+⚡ This application was generated using Lovable AI App Builder and customized for production use.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Lovable Platform: Lovable
 
-Changes made via Lovable will be committed automatically to this repo.
+🛠 Tech Stack
 
-**Use your preferred IDE**
+Frontend: Streamlit (generated via Lovable)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Backend: OpenAI GPT API
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Language: Python
 
-Follow these steps:
+Deployment: Lovable Cloud
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+✨ Key Features
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Hindi/Urdu question input
 
-# Step 3: Install the necessary dependencies.
-npm i
+Roman Hindi AI-generated answers
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Short & Long answer modes
 
-**Edit a file directly in GitHub**
+Class selection (8, 10, 12)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Neon multi-color UI theme
 
-**Use GitHub Codespaces**
+Mobile responsive layout
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Backend API call status handling
 
-## What technologies are used for this project?
+Multi-page navigation (Next / Back)
 
-This project is built with:
+🤖 AI Integration
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Uses OpenAI GPT API
 
-## How can I deploy this project?
+Prompt engineered for:
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Roman Hindi only
 
-## Can I connect a custom domain to my Lovable project?
+Simple explanation
 
-Yes, you can!
+Exam-focused answers
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Consistent style formatting
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+📦 Installation (If Running Locally)
+pip install streamlit openai
+
+Set API key:
+
+export OPENAI_API_KEY="your_api_key_here"
+
+Run:
+
+streamlit run app.py
+📌 Project Note
+
+This project demonstrates:
+
+AI-assisted application development
+
+Prompt engineering
+
+EdTech solution building
+
+Modern UI + API integration
+
+👨‍💻 Developer
+
+MOHD KAIF
+AI + Education Tools Builder
