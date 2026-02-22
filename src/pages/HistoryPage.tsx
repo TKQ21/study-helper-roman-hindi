@@ -38,17 +38,17 @@ const HistoryPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen neon-bg-grid px-4 pb-24 pt-6">
+    <div className="min-h-[100dvh] neon-bg-grid px-3 sm:px-4 pb-20 pt-4 sm:pt-6">
       <div className="max-w-lg mx-auto">
         {/* Header */}
-        <div className="flex items-center justify-between mb-6">
-          <div className="flex items-center gap-3">
+        <div className="flex items-center justify-between mb-4 sm:mb-6">
+          <div className="flex items-center gap-2 sm:gap-3">
             <Link to="/">
               <NeonButton neonColor="cyan" size="sm">
-                <ArrowLeft size={18} />
+                <ArrowLeft size={16} />
               </NeonButton>
             </Link>
-            <h1 className="font-display text-2xl font-bold neon-text-pink">History</h1>
+            <h1 className="font-display text-xl sm:text-2xl font-bold neon-text-pink">History</h1>
           </div>
           {history.length > 0 && (
             <NeonButton neonColor="red" size="sm" onClick={clearHistory}>
